@@ -404,7 +404,7 @@ class TrustRegions(Optimizer):
                 iteration=iteration,
                 point=x,
                 cost=fx,
-                gradient_norm=fgradx,
+                gradient_norm=norm_grad,
             )
 
             # ** Display:
