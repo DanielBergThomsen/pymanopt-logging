@@ -399,6 +399,14 @@ class TrustRegions(Optimizer):
                 # accept = False
                 accstr = "REJ"
 
+            # Logging
+            self._add_log_entry(
+                iteration=iteration,
+                point=x,
+                cost=fx,
+                gradient_norm=fgradx,
+            )
+
             # ** Display:
             if self._verbosity == 2:
                 print(
